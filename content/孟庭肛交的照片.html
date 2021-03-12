@@ -133,11 +133,46 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='小工具.html'>Next</a> >> 小工具<br /><h1>博麗神社的賽錢箱</h1>
-<p><img alt="" height="600" src="./../images/8b0c30be4d250ba69d32dfb7ee76b43b.jpg" width="600"/></p>
+    <div id="tipue_search_content">15襲擊 << <a href='15襲擊.html'>Previous</a> <br /><h1>孟庭肛交的照片</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js'/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<!--Design by Cotpear _Start-->
+<p>請輸入密碼，以觀看孟庭的屁眼。 <input id="EPassword" type="text"/> <button onclick="multiDecrypt($('#EPassword').val())">解密</button></p>
+<script>
+var encryption = [
+            "U2FsdGVkX19vWNntP7JDuEt3eYAg2/d2osbHh41x4Sx606JUgFfXMnYNmI1+0J2pBT1YoWyUES20dc/kV9P5WrvHPyALQJR6JT2pZ4qds+K1RYdHZmRNjJ29dLeowIwfkKkL50n28NwW3n7TYMt793hPiX+FyyXgWEuCh4WaXbdNht/WLbZwcSW9lhPapp1dSBjexkUTv0uDbkAEqt0KcyeSlpdMNyxeHV9H6Nz8wy1uDBoX9D2wLkGA1+ZiW1k2QIvuu/Bo+mAmOH+NU61RWW2BiC0Rcwm/n/T10bmNBhpXawaU9JeHod99mxkVpOelfOLbce1pJgzvBKxEzyGgwdkPApg/lX7+ZwwWC8kiHoEekpYVyXn3nLtG59a9M2kjYtteIA7cdNixRpYtc+72WAOJhZKJ1BQeMviqpl9/CqTBFY+QD1iSccmxGjWE0e4jE3PojRzKgCedLuM3/Kdv12XKSQVMmpxdumhUfqeWsmvSosNUXfZPKOMbDdMi+fQCQEUp2nyf4ydEUADxu2XMZw==",
+        ],
+        canDeCrypt = 0;
+    function multiDecrypt(pwd) {
+        encryption.forEach((item, i) => {
+            try {
+                canDeCrypt = Decrypt(item, pwd)
+            } catch (e) {
+                if (canDeCrypt == 0) {
+                    canDeCrypt = 0
+                }
+            }
+        })
+        if (canDeCrypt == 0) {
+            alert("密碼錯誤")
+        } else {
+            //ok
+            document.getElementById("result").innerHTML = canDeCrypt;
+        }
+    }
+    function Decrypt(item, pwd) {
+        return decodeURIComponent(
+            CryptoJS.AES.decrypt(
+                item, pwd
+            ).toString(CryptoJS.enc.Utf8)
+        )
+    }
+</script>
 <p></p>
-<p></p>
-<br /> <a href='小工具.html'>Next</a> >> 小工具</div>
+<div id="result"></div>
+<!--Design by Cotpear _End--><br />15襲擊 << <a href='15襲擊.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
