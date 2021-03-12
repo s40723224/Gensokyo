@@ -7,10 +7,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
 <!--Design by Cotpear _Start-->
-<p>請輸入密碼，以解開加密網頁。 <input id="EPassword" type="text"/> <button onclick="multiDecrypt($('#EPassword').val())">解密</button></p>
+<p>請輸入密碼，以解開加密網頁。<input id="EPassword" type="text"/> <button onclick="multiDecrypt($('#EPassword').val())">解密</button>
 <script>
 var encryption = [
-            "U2FsdGVkX18szMFdUf14N2ON8LA0U2RGy6m9mEOx13eWzaM2sgC/WyWY4cZRD4darxtwvfj74nTYzf8GlLHUCg==",
+            "U2FsdGVkX1/C9j7BT/OLyltd6mnckEtvl5fO7mBeN5upB6jIQSaYXAbSANeGEB33YpSa9sw/Yz3LLsIevFHymzwCjrnXTs7fBqFbbzYk9MpPIhK0QmY+ofp2Xy/FTkf9HMlQ183R1seCvTLMCG5tTeGNXAAeTXP6HBeUEhIJYQXdU0zA4HTHxKBnH8Xis005PPNEG4qZfQz8ib5H67P4sUF1uunm49TG27WA7j4alhcu9EvfNc07/h2fPHEwib7Z5YD6+zqFTzgKyWApo3NQmwc1kpGgf5kG4/yngNqdi3XmYg8VE0mj4nTgh01SWFcB25uvsOrbPCU7wtwO/4BS5/cwTFghkY8+riimjhUqAX/UBf49p1bxwMdG9J3JwB5vswt1M4Plac3xDHWTc9eE39MbsPoTb/u+nmNGNdrNOCk=",
         ],
         canDeCrypt = 0;
     function multiDecrypt(pwd) {
@@ -38,6 +38,6 @@ var encryption = [
         )
     }
 </script>
-<p></p>
-<p></p>
-<!--Design by Cotpear _End-->
+</p>
+<div id="result"></div>
+<p><!--Design by Cotpear _End--></p>
