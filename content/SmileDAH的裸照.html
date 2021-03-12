@@ -133,10 +133,46 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='SmileDAH的裸照.html'>Next</a> >> SmileDAH的裸照<br /><h1>博麗神社的賽錢箱</h1>
-<p><img alt="" height="600" src="./../images/8b0c30be4d250ba69d32dfb7ee76b43b.jpg" width="600"/></p>
-<p></p>
-<br /> <a href='SmileDAH的裸照.html'>Next</a> >> SmileDAH的裸照</div>
+    <div id="tipue_search_content">博麗神社的賽錢箱 << <a href='博麗神社的賽錢箱.html'>Previous</a> <br /><h1>SmileDAH的裸照</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js'/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<!--Design by Cotpear _Start-->
+<p>請輸入密碼，以解開加密網頁。<input id="EPassword" type="text"/> <button onclick="multiDecrypt($('#EPassword').val())">解密</button>
+<script>
+    var encryption = [
+            "將您的密文貼至於此(1)",
+        ],
+        canDeCrypt = 0;
+    function multiDecrypt(pwd) {
+        encryption.forEach((item, i) => {
+            try {
+                canDeCrypt = Decrypt(item, pwd)
+            } catch (e) {
+                if (canDeCrypt == 0) {
+                    canDeCrypt = 0
+                }
+            }
+        })
+        if (canDeCrypt == 0) {
+            alert("密碼錯誤")
+        } else {
+            //ok
+            document.getElementById("result").innerHTML = canDeCrypt;
+        }
+    }
+    function Decrypt(item, pwd) {
+        return decodeURIComponent(
+            CryptoJS.AES.decrypt(
+                item, pwd
+            ).toString(CryptoJS.enc.Utf8)
+        )
+    }
+</script>
+<br/> </p>
+<div id="result"></div>
+<p><!--Design by Cotpear _End--></p><br />博麗神社的賽錢箱 << <a href='博麗神社的賽錢箱.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
