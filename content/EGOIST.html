@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,94 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='博麗神社的賽錢箱.html'>博麗神社的賽錢箱</a><li><a href='EGOIST.html'>EGOIST</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">博麗神社的賽錢箱 << <a href='博麗神社的賽錢箱.html'>Previous</a> <br /><h1>EGOIST</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js'/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<p><!--Design by Cotpear _End--></p>
+<!--Design by Cotpear _Start-->
+<p>請輸入密碼，以解開加密網頁。<input id="EPassword" type="text"/> <button onclick="multiDecrypt($('#EPassword').val())">解密</button></p>
+<script>
+var encryption = [
+            "U2FsdGVkX1+wno8CZA8VeWpMEq0XD+V7n9pFlwybzrBdB7OFxJjR4QaHKThyz+27VewoUCOFo6ugkozdY934g9Fya4cYnK5gX5T28OuINThzzhl8stmqvZ24xERP0TGvBfNYB41mLMp/9IbfClqUJuO58ZbvgdWMnKhdXOx4PR4Mb/P0tKV7jdlRY2Svrq6SMWU33PzPJd276yuUjtBxlXPEC6aB9GTyph/volaQpweMCMznI21GgTQ02t4WU2lvTe+L1ooXStmToO3Ovxg+uftfczykrKQWqZ6i6xyHxN6VA5oF+SSXtLNhf+1X7EGRVhMpFVGW76QtabkY9Np3Dvl/ssvDaochJcU4Kb+3IahBRUdDaEw+/Zg9ODs9qAGIeViEkN+OCMOPF9xEWPsxoaTkxVLnQ2RISCQKTYu/gYJz4LpzDX6e1SNwGkrFt/qmi/rSTprGyGqzXPkQZ8FPlEpa1vDMquZf/UBk2czu46esQetMiF4IA3PWy12UIKE94GyYbOZJALIYzDCSL9qpBzV1M1XeMzteHq/pSHXiuhj5qNMYKN4JPtHpypGDS8m1Mn1xISMwKWvDj3oddwd6a3AFg+Gc3C8OMXJDMNiU1+9ivbG9Oqa1sB16aa56LIlr6LiGdjdvYHPS92z59RfBf/YJuV0hUk4K8wegBQfq85v1zKJcL1APBRYLqFItQtaCg9L5sjv6i3cSI3jjELzwBlrWNmnOTtI81jFHEUA3lA9Q8vQyjkCrUFzmukUR18jyAKWgafF3tAgPkooIRrWAeqfVhk5rxVK9rOsLN6njFZKCXd99KCRo0+zQJTrpLgC/iaVVRCjDI4x+f0vdgdKozdrXas7PIR1SlROix9/Hf8EMeMsUhPdjLbZ/2grp9CifdHYQYvXq1jNynmqAHAGwRHhA6OcDY11+GSdj74HUVvcEm4jiKAaKLnfOlrnOMhEU/eoZ9nVM27LUnjRHfMYmbEL/wDhhZFiYHeJDjVz90oOOUlIKggU2zHJmTo2m38lbCg+wHiNJYMkyrjcBMl2qteik1m+hljILl+SL68gqHVNjT/UJP71RGLitwToUAqmLtnxazeaEp7KlVl0DMiNn/xbXjqIiTL8hg4HRw/ERPbbUciXhw9cQfEd3I9nsSbYZbJOQS1HZVIOgIsXluKqXC2zLJaTphEmntPM9XjROsUahRGdJ9Xi9DpGN/ywXYBbO",
+        ],
+        canDeCrypt = 0;
+    function multiDecrypt(pwd) {
+        encryption.forEach((item, i) => {
+            try {
+                canDeCrypt = Decrypt(item, pwd)
+            } catch (e) {
+                if (canDeCrypt == 0) {
+                    canDeCrypt = 0
+                }
+            }
+        })
+        if (canDeCrypt == 0) {
+            alert("密碼錯誤")
+        } else {
+            //ok
+            document.getElementById("result").innerHTML = canDeCrypt;
+        }
+    }
+    function Decrypt(item, pwd) {
+        return decodeURIComponent(
+            CryptoJS.AES.decrypt(
+                item, pwd
+            ).toString(CryptoJS.enc.Utf8)
+        )
+    }
+</script>
+<p></p>
+<div id="result"></div>
+<!--Design by Cotpear _End--><br />博麗神社的賽錢箱 << <a href='博麗神社的賽錢箱.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
